@@ -58,6 +58,9 @@ textarea:focus {
 button {
   border: none;
   cursor: pointer; }
+.btn {
+  margin-bottom: 20px;
+}
 
 textarea {
   resize: none; }
@@ -163,6 +166,9 @@ textarea {
     border: 2px solid #0062b9;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
+.btn {
+  margin-bottom: 20px;
+}
 
 .sec-pad {
   padding: 12rem 0; }
