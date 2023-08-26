@@ -727,14 +727,8 @@ transition: transform 0.3s ease-in-out;
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Change from "center" to "flex-start" */
-  align-items: flex-start; /* Change from "center" to "flex-start" */
-}
-
-.video-item {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .video-item {
@@ -765,12 +759,15 @@ transition: transform 0.3s ease-in-out;
 }
 
 @keyframes wheel {
-to {
-opacity: 0;
-top: 27px; } }
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
 
 @-webkit-keyframes wheel {
-to {
-opacity: 0;
-top: 27px; } 
+  to {
+    opacity: 0;
+    top: 27px;
+  }
 }
