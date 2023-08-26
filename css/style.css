@@ -699,39 +699,14 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
-.video-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+<style>
+  .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+</style>
 
-.video-item {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.video-title {
-  margin-top: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
 
 @keyframes wheel {
   to {
