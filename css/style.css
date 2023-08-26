@@ -705,6 +705,14 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+
+.video-title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
 </style>
 
 
