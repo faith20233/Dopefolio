@@ -705,25 +705,6 @@ animation: wheel 1.3s infinite;
 -webkit-animation: wheel 1.3s infinite; }
 <style> .video-gallery { display: flex; flex-wrap: wrap; justify-content: center; } .video-title { margin-top: 10px; font-size: 24px; font-weight: bold; text-align: center; } </style>
 
-.slider {
-position: relative;
-height: 100vh;
-overflow: hidden;
-}
-
-.slider-container {
-width: 100%;
-height: 100%;
-display: flex;
-transition: transform 0.8s ease-in-out;
-}
-
-.slide {
-display: inline-block;
-width: 100%;
-transition: transform 0.3s ease-in-out;
-}
-
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -759,6 +740,13 @@ transition: transform 0.3s ease-in-out;
 }
 
 @keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+@-webkit-keyframes wheel {
   to {
     opacity: 0;
     top: 27px;
