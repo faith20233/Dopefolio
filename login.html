@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invitation Code Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invitation Code Validation</h1>
+        <label for="invitationCode">Enter the invitation code:</label>
+        <input type="text" id="invitationCode" placeholder="Enter code">
+
+        <button onclick="validateCode()">Validate</button>
+
+        <p id="resultMessage"></p>
+    </div>
+
+    <script>
+        function validateCode() {
+            var codeInput = document.getElementById("invitationCode");
+            var code = codeInput.value;
+            var resultMessage = document.getElementById("resultMessage");
+
+            if (code === "YourInvitationCode") {
+                resultMessage.textContent = "Invitation code is valid. Welcome!";
+            } else {
+                resultMessage.textContent = "Sorry, your code is not valid.";
+            }
+
+            // Clear the input field after validation
+            codeInput.value = "";
+        }
+    </script>
+</body>
+</html>
