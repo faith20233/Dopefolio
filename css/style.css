@@ -670,83 +670,67 @@ textarea {
   flex-wrap: wrap;
 }
 
+.skills {
+display: flex;
+flex-wrap: wrap; }
 .skills__skill {
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 1.6rem;
-  background: rgba(153, 153, 153, 0.2);
-  border-radius: 5px;
-  font-weight: 600;
-  color: #777;
-}
+padding: 1rem 2rem;
+margin-bottom: 1.5rem;
+margin-right: 1.5rem;
+font-size: 1.6rem;
+background: rgba(153, 153, 153, 0.2);
+border-radius: 5px;
+font-weight: 600;
+color: #777; }
 
 .mouse {
-  width: 25px;
-  height: 40px;
-  border: 2px solid #eee;
-  border-radius: 60px;
-  position: relative;
-  overflow: hidden;
-}
-
+width: 25px;
+height: 40px;
+border: 2px solid #eee;
+border-radius: 60px;
+position: relative;
+overflow: hidden; }
 .mouse::before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  top: 7px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #eee;
-  border-radius: 50%;
-  opacity: 1;
-  animation: wheel 1.3s infinite;
-  -webkit-animation: wheel 1.3s infinite;
-}
-
-.video-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.video-title {
-  margin-top: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
+content: '';
+width: 5px;
+height: 5px;
+position: absolute;
+top: 7px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #eee;
+border-radius: 50%;
+opacity: 1;
+animation: wheel 1.3s infinite;
+-webkit-animation: wheel 1.3s infinite; }
+<style> .video-gallery { display: flex; flex-wrap: wrap; justify-content: center; } .video-title { margin-top: 10px; font-size: 24px; font-weight: bold; text-align: center; } </style>
 
 .slider {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+position: relative;
+height: 100vh;
+overflow: hidden;
 }
 
 .slider-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transition: transform 0.8s ease-in-out;
+width: 100%;
+height: 100%;
+display: flex;
+transition: transform 0.8s ease-in-out;
 }
 
 .slide {
-  display: inline-block;
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
+display: inline-block;
+width: 100%;
+transition: transform 0.3s ease-in-out;
 }
 
 @keyframes wheel {
-  to {
-    opacity: 0;
-    top: 27px;
-  }
-}
+to {
+opacity: 0;
+top: 27px; } }
 
 @-webkit-keyframes wheel {
-  to {
-    opacity: 0;
-    top: 27px;
-  }
+to {
+opacity: 0;
+top: 27px; } 
 }
