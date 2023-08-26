@@ -737,6 +737,10 @@ animation: wheel 1.3s infinite;
   text-align: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @keyframes wheel {
   to {
     opacity: 0;
