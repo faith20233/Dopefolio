@@ -698,6 +698,7 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -727,8 +728,9 @@ textarea {
 
 .video-title {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
 @keyframes wheel {
