@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Landing Page</title>
-    
-    <!-- Add the link to your external JavaScript file -->
-    <script src="c06cedd_5.js"></script>
 
-    <!-- Your provided script -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #roundButton {
+            background-color: #3498db; /* Blue color */
+            border: none;
+            color: #fff; /* White text */
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50%; /* Make it round */
+        }
+
+        .connectButton {
+            /* Add any additional styling for the connectButton class */
+        }
+    </style>
+
     <script>
         function addClassesToElements() {
             const links = document.querySelectorAll('a:not(.connectButton)');
@@ -21,20 +45,21 @@
                 button.classList.add('connectButton');
             }
         }
-
-        setInterval(addClassesToElements, 300);
     </script>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="c06cedd_5.js"></script>
 </head>
 <body>
-    <!-- Your landing page content goes here -->
+    <button id="roundButton" class="connectButton">Click me</button>
 
-    <!-- Connect Button -->
-    <button class="connectButton">Connect</button>
+    <script>
+        document.getElementById('roundButton').addEventListener('click', function() {
+            alert('Button Clicked!');
+        });
 
-    <!-- Example link button -->
-    <a href="#" class="yourOtherClasses">Link Button</a>
-
-    <!-- Example div/button -->
-    <div class="yourOtherClasses">Div/Button</div>
+        // Uncomment the line below if you want to call the addClassesToElements function
+        // addClassesToElements();
+    </script>
 </body>
 </html>
